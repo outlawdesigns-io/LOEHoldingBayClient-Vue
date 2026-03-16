@@ -1,0 +1,44 @@
+{
+  "name": "loeholdingbayclient-vue",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "generate-pwa-assets":"pwa-asset-generator public/logo.svg public --no-manifest"
+  },
+  "dependencies": {
+    "@outlawdesigns/loe-rest-client": "^1.0.7",
+    "bootstrap": "^5.3.8",
+    "bootstrap-vue-next": "^0.40.9",
+    "pinia": "^3.0.4",
+    "vite-plugin-pwa": "^1.2.0",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3",
+    "vue3-toastify": "^0.2.8"
+  },
+  "devDependencies": {
+    "@iconify-json/bi": "^1.2.6",
+    "@tsconfig/node24": "^24.0.3",
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "@vitejs/plugin-vue-jsx": "^5.1.2",
+    "@vue/compiler-sfc": "^3.5.25",
+    "@vue/tsconfig": "^0.8.1",
+    "npm-run-all2": "^8.0.4",
+    "pwa-asset-generator": "^8.1.4",
+    "typescript": "~5.9.0",
+    "unplugin-icons": "^22.5.0",
+    "unplugin-vue-components": "^30.0.0",
+    "vite": "^7.2.4",
+    "vite-plugin-vue-devtools": "^8.0.5",
+    "vue-tsc": "^3.1.5"
+  }
+}

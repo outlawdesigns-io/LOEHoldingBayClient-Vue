@@ -1,0 +1,21 @@
+services:
+  frontend:
+    image: loe-holdingbay-client-vue
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      ENV: 'production',
+      TZ: 'America/Chicago',
+      API_URL: 'https://loe-service.outlawdesigns.io',
+      AUTH_DISCOVERY_URI: 'https://auth.outlawdesigns.io/.well-known/openid-configuration',
+      AUTH_CLIENT_ID: 'loesuite-holdingbay-vuepwa',
+      AUTH_REDIRECT_URL: 'https://loe-holdingbay-app.outlawdesigns.io/token/',
+      AUTH_LOGOUT_URL: 'https://loe-holdingbay-app.outlawdesigns.io/logout/',
+      AUTH_SCOPE: 'offline_access offline openid',
+      AUTH_DISABLED: false,
+      LOE_BASE_URL: 'https://loe.outlawdesigns.io/'
+    ports:
+      - '3000:80'
+    volumes:
+      - /tmp/log/:/log/
