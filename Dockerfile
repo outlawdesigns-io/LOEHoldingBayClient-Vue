@@ -28,4 +28,4 @@ RUN npm install -g @outlawdesigns/static-express-server
 EXPOSE 80
 
 ENTRYPOINT ["./entrypoint.sh"]
-CMD ["/bin/sh","-c","static-express-server > /log/loe-music-app.log"]
+CMD ["/bin/sh","-c","static-express-server > /log/loe-holdingbay-app.log"]

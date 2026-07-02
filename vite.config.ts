@@ -33,25 +33,25 @@ export default defineConfig({
         theme_color: '#1976d2',
         icons: [
           {
-            "src": "manifest-icon-192.maskable.png",
+            "src": "android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
           },
           {
-            "src": "manifest-icon-192.maskable.png",
+            "src": "android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
           },
           {
-            "src": "manifest-icon-512.maskable.png",
+            "src": "android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
           },
           {
-            "src": "manifest-icon-512.maskable.png",
+            "src": "android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
